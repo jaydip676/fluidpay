@@ -23,21 +23,21 @@ function Navbar() {
     connect();
   };
 
-  useEffect(() => {
-    if (isConnected) {
-      setConnection(true);
-    } else {
-      setConnection(false);
-    }
-  }, [isConnected]);
+  // useEffect(() => {
+  //   if (isConnected) {
+  //     setConnection(true);
+  //   } else {
+  //     setConnection(false);
+  //   }
+  // }, [isConnected]);
 
-  useEffect(() => {
-    if (isConnected) {
-      setConnection(true);
-    } else {
-      setConnection(false);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (isConnected) {
+  //     setConnection(true);
+  //   } else {
+  //     setConnection(false);
+  //   }
+  // }, []);
   return (
     <>
       <nav className="navbar">
@@ -201,26 +201,30 @@ function Navbar() {
                   </li> */}
 
                   <li>
-                    <button
-                      className="nav-button"
-                      onClick={() => {
-                        disconnect();
+                    <ConnectButton
+                      accountStatus={{
+                        smallScreen: "avatar",
+                        largeScreen: "full",
                       }}
-                    >
-                      Disconnect
-                    </button>
+                      showBalance={{
+                        smallScreen: false,
+                        largeScreen: true,
+                      }}
+                    />
                   </li>
                 </>
               ) : (
                 <li>
-                  <button
-                    className="nav-button"
-                    onClick={() => {
-                      connectWallet();
+                  <ConnectButton
+                    accountStatus={{
+                      smallScreen: "avatar",
+                      largeScreen: "full",
                     }}
-                  >
-                    Connect
-                  </button>
+                    showBalance={{
+                      smallScreen: false,
+                      largeScreen: true,
+                    }}
+                  />
                 </li>
               )}
             </ul>

@@ -51,72 +51,70 @@ h1.register-header {
 
   .register-item-1 {
     margin-top: 5vh;
-    height: 7vh;
-    width: 15vw;
+    // height: 7vh;
+    // width: 15vw;
+    padding: 10px;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     background-color: #f3f4f6;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid #f3f4f6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    // border-radius: 10px;
     width: 100%;
   }
 
   .register-item-2 {
-    height: 7vh;
-    width: 15vw;
+    // height: 7vh;
+    // width: 15vw;
+    padding: 10px;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     background-color: #f3f4f6;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid #f3f4f6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
     width: 100%;
   }
 
   .register-item-3 {
-    height: 7vh;
-    width: 15vw;
+    // height: 7vh;
+    // width: 15vw;
+    padding: 10px;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
     background-color: #f3f4f6;
-    border: 2px solid #000;
-    border-radius: 10px;
+    border: 2px solid #f3f4f6;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 100%;
   }
 }
 
 .register-btn {
-  height: 5vh;
-  width: 8vw;
   border-radius: 10px;
-  background: rgb(251, 176, 59);
-  background: linear-gradient(
-    90deg,
-    rgba(251, 176, 59, 1) 0%,
-    rgba(247, 147, 104, 1) 60%
-  );
-  font-family: "Quicksand_Bold";
-  color: #731b33;
+  background-color: #000000;
+  font-family: "SF Rounded";
+  border: 1px solid #ffffff;
+  color: #ffffff;
   font-size: medium;
   cursor: pointer;
+  padding: 10px 30px;
 }
 
 .register-btn-disabled {
-  height: 5vh;
-  width: 8vw;
+  opacity: 0.5;
+  pointer-events: none;
   border-radius: 10px;
-  background: rgb(192, 192, 192);
-  background: linear-gradient(
-    90deg,
-    rgba(192, 192, 192, 1) 0%,
-    rgba(128, 128, 128, 1) 100%
-  );
-
-  font-family: "Quicksand_Bold";
-  color: #fff;
+  background-color: #000000;
+  font-family: "SF Rounded";
+  border: 1px solid #ffffff;
+  color: #ffffff;
   font-size: medium;
+  cursor: pointer;
+  padding: 10px 30px;
 }
 
 .register-featured-image {
@@ -128,67 +126,63 @@ h1.register-header {
   height: 5vh;
   width: 5vw;
   border-radius: 10px;
-  background: rgb(255, 136, 193);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 136, 193, 1) 0%,
-    rgba(255, 52, 148, 1) 100%
-  );
+  background-color: #000000;
+  border: 1px solid #ffffff;
   font-weight: 600;
   color: white;
   margin: 10px 10px 10px 10px;
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-  .register-header {
-    // margin-top: 100px;
-    width: 15%;
-    height: 8%;
-    padding-top: 0.6vh;
-    margin-left: 42.5%;
-    margin-top: 7vh;
-    font-size: 25px;
-  }
+// @media only screen and (min-width: 1024px) and (max-width: 1440px) {
+//   .register-header {
+//     // margin-top: 100px;
+//     width: 15%;
+//     height: 8%;
+//     padding-top: 0.6vh;
+//     margin-left: 42.5%;
+//     margin-top: 7vh;
+//     font-size: 25px;
+//   }
 
-  .register-main {
-    width: 30%;
-    height: 85vh;
-    margin-left: 35%;
-    margin-top: 10vh;
+//   .register-main {
+//     width: 30%;
+//     height: 85vh;
+//     margin-left: 35%;
+//     margin-top: 10vh;
 
-    .register-item-1 {
-      margin-top: 5vh;
-      height: 7vh;
-      width: 20vw;
-    }
+//     .register-item-1 {
+//       margin-top: 5vh;
+//       height: 7vh;
+//       width: 20vw;
+//     }
 
-    .register-item-2 {
-      margin-top: 2vh;
-      height: 7vh;
-      width: 20vw;
-    }
+//     .register-item-2 {
+//       margin-top: 2vh;
+//       height: 7vh;
+//       width: 20vw;
+//     }
 
-    .register-item-3 {
-      margin-top: 2vh;
-      height: 7vh;
-      width: 20vw;
-    }
-  }
+//     .register-item-3 {
+//       margin-top: 2vh;
+//       height: 7vh;
+//       width: 20vw;
+//     }
+//   }
 
-  .register-btn {
-    height: 7vh;
-    width: 15vw;
-  }
+//   .register-btn {
+//     height: 7vh;
+//     width: 15vw;
+//   }
 
-  .register-btn-disabled {
-    height: 7vh;
-    width: 15vw;
-  }
+//   .register-btn-disabled {
+//     height: 7vh;
+//     width: 15vw;
+//   }
 
-  #Capa_1 {
-    height: 15vh !important;
-  }
-}
+//   #Capa_1 {
+//     height: 15vh !important;
+//   }
+// }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .register-header {

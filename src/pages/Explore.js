@@ -32,6 +32,7 @@ function Home() {
     const fetch = async () => {
       console.log("inside fetch");
       platformsAddresses_array =
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         await connectedContract.getAllPlatformsAddress();
       console.log("platfroms addresses");
       console.log(platformsAddresses_array);

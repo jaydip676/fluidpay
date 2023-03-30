@@ -43,6 +43,7 @@ function SinglePage() {
       chainId: 5,
       provider: provider,
     });
+    console.log(sf);
 
     try {
       console.log(data[0].address);

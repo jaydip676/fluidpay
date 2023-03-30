@@ -249,20 +249,9 @@ function PlatformProfile() {
               <h3 className="browse-qr-header">End Stream</h3>
               <div className="qrcode__container">
                 <div className="browse-qr-img">{endQrcode}</div>
-                <div className="input__group">
-                  <form onSubmit={downloadQRCode}>
-                    {/* <label>URL</label>
-                  <input
-                    type="text"
-                    value={url}
-                    onChange={qrCodeEncoder}
-                    placeholder="https://qr.com"
-                  /> */}
-                    {/* <button type="submit" disabled={!url}>
-                    Download QR code
-                  </button> */}
-                  </form>
-                </div>
+                {/* <div className="input__group">
+                  <form onSubmit={downloadQRCode}></form>
+                </div> */}
               </div>
             </div>
           </div>

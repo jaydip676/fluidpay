@@ -5,7 +5,7 @@ import {
   BrowserRouter as Router,
   BrowserRouter,
 } from "react-router-dom";
-
+import "@rainbow-me/rainbowkit/styles.css";
 import {
   darkTheme,
   getDefaultWallets,
