@@ -1,0 +1,526 @@
+.transcation-main {
+  padding-top: 20vh;
+  height: 100vh;
+  background: rgb(83, 36, 65);
+  background: linear-gradient(
+    270deg,
+    rgba(83, 36, 65, 1) 38%,
+    rgba(115, 27, 51, 1) 100%
+  );
+}
+
+.transaction-header {
+  color: #fbb03b;
+  font-family: "gilmer_light";
+}
+
+.transaction-top {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.transaction-img {
+  height: 10vh;
+  width: 10vw;
+  margin-right: 8vh;
+  border-radius: 50%;
+}
+
+.transaction-top-1 {
+  margin-left: -3vw;
+  color: #fbb03b;
+  font-family: "Quicksand_Bold";
+  margin-top: 3vh;
+}
+
+.transaction-top-2 {
+  margin-top: 4vh;
+  color: #1abb3f;
+  font-family: "Quicksand_Regular";
+}
+
+.transaction-top-3 {
+  color: #f79368;
+  font-family: "Quicksand_Bold";
+}
+
+.transaction-mid {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.transaction-send-receive {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  border-radius: 10px;
+  width: 50vh;
+  height: 15vh;
+  margin: 5% 1% 5% 1%;
+  background-color: #ffffd1;
+  font-family: "Quicksand_Regular";
+}
+
+.transaction-send-receive-header {
+  background-color: #f79368;
+  height: 30%;
+  width: 50%;
+  padding-top: 2px;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-top: -2.5vh;
+  font-family: "Quicksand_Bold";
+}
+
+.transaction-send-receive-div {
+  font-size: 15px;
+}
+
+.cloud-main {
+  width: 50%;
+  overflow: hidden;
+}
+
+#clouds {
+  padding: 25vh 0;
+  height: 50vh;
+  //   background: #c9dbe9;
+  //   background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  //   background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  //   background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+  width: 15vw;
+  height: 2vh;
+  background: #ffffd1;
+
+  //   border-radius: 200px;
+  //   -moz-border-radius: 200px;
+  //   -webkit-border-radius: 200px;
+
+  position: relative;
+}
+
+.cloud:before,
+.cloud:after {
+  //   content: "";
+  position: absolute;
+  background: #fff;
+  width: 10vw;
+  height: 8vh;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+
+  border-radius: 100px;
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+  width: 120px;
+  height: 120px;
+  top: -55px;
+  left: auto;
+  right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+  animation: moveclouds 1s linear infinite;
+  -moz-animation: moveclouds 1s linear infinite;
+  -o-animation: moveclouds 1s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+  left: 80px;
+  top: -45px;
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 0.6; /*opacity proportional to the size*/
+
+  /*Speed will also be proportional to the size and opacity*/
+  /*More the speed. Less the time in 's' = seconds*/
+  animation: moveclouds 1.1s linear infinite;
+  -moz-animation: moveclouds 1.1s linear infinite;
+  -o-animation: moveclouds 1.1s linear infinite;
+  background: #fbb03b;
+}
+
+.x3 {
+  left: -85px;
+  top: -80px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.5s linear infinite;
+  -moz-animation: moveclouds 1.5s linear infinite;
+  -o-animation: moveclouds 1.5s linear infinite;
+}
+
+.x4 {
+  left: 90px;
+  top: -85px;
+
+  -webkit-transform: scale(0.75);
+  -moz-transform: scale(0.75);
+  transform: scale(0.75);
+  opacity: 0.75; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.3s linear infinite;
+  -moz-animation: moveclouds 1.3s linear infinite;
+  -o-animation: moveclouds 1.3s linear infinite;
+  background: #f79368;
+}
+
+.x5 {
+  left: -70px;
+  top: -70px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.7s linear infinite;
+  -moz-animation: moveclouds 1.7s linear infinite;
+  -o-animation: moveclouds 1.7s linear infinite;
+  background: #ffffff;
+}
+
+.x6 {
+  left: -80px;
+  top: -65px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.2s linear infinite;
+  -moz-animation: moveclouds 1.2s linear infinite;
+  -o-animation: moveclouds 1.2s linear infinite;
+  background: #fbb03b;
+}
+
+.x7 {
+  left: -90px;
+  top: -50px;
+
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0.8; /*opacity proportional to the size*/
+
+  animation: moveclouds 1.8s linear infinite;
+  -moz-animation: moveclouds 1.8s linear infinite;
+  -o-animation: moveclouds 1.8s linear infinite;
+  background: #f79368;
+}
+
+@keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-moz-keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+@-o-keyframes moveclouds {
+  0% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: 100%;
+  }
+}
+
+.transaction-bottom {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10vh;
+}
+
+.transaction-bottom-left {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.transaction-bottom-right {
+  width: 35%;
+  margin-right: 10%;
+  margin-left: 5%;
+}
+
+.transaction-mid-bottom {
+  display: flex;
+  font-size: larger;
+  justify-content: space-between;
+  margin: 0 25% 0 25%;
+}
+
+.transaction-mid-bottom-1 {
+  margin-right: 10px;
+  color: #fbb03b;
+  font-family: "Quicksand_Bold";
+}
+
+.transaction-mid-bottom-2 {
+  margin-right: 10px;
+  color: #fbb03b;
+  font-family: "Quicksand_Bold";
+}
+
+.transaction-mid-bottom-3 {
+  color: #f79368;
+  font-family: "Quicksand_Regular";
+}
+
+.transaction-bottom-sub-main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-bottom-sub-main-1 {
+  color: #f79368;
+  font-family: "Quicksand_Bold";
+}
+
+.transaction-bottom-sub-main-2 {
+  color: #fbb03b;
+  font-family: "Quicksand_Regular";
+}
+
+@media only screen and (min-width: 1024px) {
+  .transaction-send-receive {
+    width: auto;
+    height: 15vh;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .transaction-send-receive-header {
+    background-color: #f79368;
+    height: 40%;
+    width: 70%;
+    padding-top: 2px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: -2.5vh;
+    font-size: medium;
+  }
+
+  .transaction-send-receive-div {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .transcation-main {
+    padding-top: 20vh;
+    height: 100vh;
+    min-height: auto;
+    background: rgb(83, 36, 65);
+    background: linear-gradient(
+      270deg,
+      rgba(83, 36, 65, 1) 38%,
+      rgba(115, 27, 51, 1) 100%
+    );
+  }
+
+  .transaction-top {
+    width: 50%;
+  }
+
+  .transaction-img {
+    margin-top: 2vh;
+  }
+
+  .transaction-top-1 {
+    font-size: x-large;
+  }
+
+  .transaction-top-2 {
+    font-size: larger;
+  }
+
+  .transaction-top-3 {
+    font-size: larger;
+  }
+
+  .transaction-send-receive {
+    height: 25vh;
+    width: 50vw;
+  }
+
+  .transaction-send-receive-header {
+    background-color: #f79368;
+    height: 30%;
+    width: 70%;
+    padding-top: 2px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: -2.5vh;
+    font-size: medium;
+  }
+
+  .transaction-send-receive-div {
+    font-size: 10px;
+  }
+
+  .cloud {
+    margin-top: 1vh;
+  }
+
+  .transaction-bottom {
+    padding: 10vh;
+  }
+
+  .transaction-mid-bottom {
+    margin-left: 25%;
+  }
+
+  .transaction-bottom-left {
+    width: 100%;
+  }
+
+  .transaction-bottom-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .transaction-bottom-sub-main {
+    margin: -15px;
+  }
+
+  .transaction-bottom-sub-main-1 {
+    padding: 10px;
+  }
+
+  .transaction-bottom-sub-main-2 {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .transcation-main {
+    padding-top: 20vh;
+    width: auto;
+    height: 200vh;
+    min-height: 265vh;
+    background: rgb(83, 36, 65);
+    background: linear-gradient(
+      270deg,
+      rgba(83, 36, 65, 1) 38%,
+      rgba(115, 27, 51, 1) 100%
+    );
+  }
+
+  .transaction-top {
+    width: 90%;
+  }
+
+  .transaction-img {
+    margin-top: 1vh;
+  }
+
+  .transaction-top-1 {
+    font-size: medium;
+    padding-top: 3px;
+  }
+
+  .transaction-top-2 {
+    font-size: medium;
+  }
+
+  .transaction-top-3 {
+    font-size: larger;
+  }
+
+  .transaction-mid {
+    display: grid;
+  }
+
+  .transaction-send-receive {
+    height: 25vh;
+    width: 80vw;
+  }
+
+  .transaction-send-receive-header {
+    background-color: #f79368;
+    height: 30%;
+    width: 70%;
+    padding-top: 2px;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-top: -2.5vh;
+    font-size: medium;
+  }
+
+  .transaction-send-receive-div {
+    font-size: 10px;
+  }
+
+  .cloud {
+    display: none;
+  }
+
+  .cloud-main {
+    display: none;
+  }
+
+  .transaction-bottom {
+    display: grid;
+    padding: 10vh;
+  }
+
+  .transaction-mid-bottom {
+    margin-left: 15%;
+  }
+
+  .transaction-bottom-left {
+    width: 100%;
+  }
+
+  .transaction-bottom-right {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .transaction-bottom-sub-main {
+    margin: -15px;
+  }
+
+  .transaction-bottom-sub-main-1 {
+    padding: 10px;
+  }
+
+  .transaction-bottom-sub-main-2 {
+    padding: 10px;
+  }
+}

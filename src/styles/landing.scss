@@ -1,0 +1,47 @@
+.hero-main {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+
+  width: 80%;
+  margin: 0 auto;
+
+  .hero-left {
+    width: 50%;
+    text-align: left;
+
+    h1 {
+      color: white;
+      font-size: 3.5rem;
+      font-family: "SF Rounded";
+      margin: 10px;
+    }
+    p {
+      padding: 10px;
+      font-size: 1.1rem;
+      color: #f3f4f6;
+      font-family: "SF Rounded";
+    }
+
+    button {
+      background-color: black;
+      // margin-top: 10px;
+      margin: 10px;
+      color: white;
+      border: 2px solid white;
+      padding: 20px 40px;
+      border-radius: 10px;
+    }
+  }
+
+  .hero-right {
+    width: 50%;
+
+    img {
+      width: 60%;
+      border-radius: 20px;
+    }
+  }
+}

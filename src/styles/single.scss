@@ -1,0 +1,89 @@
+.single-orgs-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // width: 90%;
+  margin: auto;
+  // padding-top: 15vh;
+
+  h1 {
+    // width: 90%;
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-family: "SF Rounded";
+  }
+  img.orgs-image {
+    width: 60%;
+    border-radius: 1rem;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 5px 50px 4px;
+  }
+  .orgs-details {
+    width: 90%;
+    margin: 0 auto;
+    color: #f3f4f6;
+
+    p {
+      // text-align: justify;
+      width: 90%;
+      margin: 0 auto;
+      font-family: "Quicksand_Regular";
+    }
+    h4 {
+      // border-top: 1px solid #f3f4f6;
+      padding-top: 20px;
+      color: #ffffff;
+      font-size: 1.2rem;
+      font-family: "SF Rounded";
+    }
+    h4:last-of-type {
+      padding-bottom: 20px;
+      // border-bottom: 1px solid #f3f4f6;
+    }
+  }
+  .orgs-last-section {
+    position: relative;
+
+    img.background-image {
+      //   position: absolute;
+      //   right: -10%;
+      //   left: -10%;
+      width: 100%;
+      //   max-width: 120%;
+      //   border-radius: 1rem;
+      //   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    img.ethlogo-image {
+      position: absolute;
+      /* right: auto; */
+      /* margin: auto; */
+      bottom: 20%;
+      width: 12%;
+      z-index: 5;
+      right: 42.7%;
+      animation: mover 1s infinite alternate;
+    }
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .single-orgs-page {
+    .orgs-details {
+      p.orgs-address {
+        text-align: center;
+      }
+      p.orgs-desc {
+        text-align: justify;
+      }
+    }
+  }
+}

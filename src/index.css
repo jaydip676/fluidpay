@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  border: 0 solid #e5e7eb;
+}
+@font-face {
+  font-family: "Chonburi";
+  src: local("Chonburi"),
+    url("./assets/Chonburi-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "SF Rounded";
+  src: local("SF Rounded"),
+    url("./assets/FontsFree-Net-SF-Pro-Rounded-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "gilmer_light";
+  src: local("gilmer_light"),
+    url("./assets/gilmer-light.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand_Regular";
+  src: local("Quicksand_Regular"),
+    url("./assets/Quicksand-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Quicksand_Bold";
+  src: local("Quicksand_Bold"),
+    url("./assets/Quicksand-Bold.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+button {
+  cursor: pointer;
+}

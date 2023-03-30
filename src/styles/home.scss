@@ -1,0 +1,195 @@
+.Explore-main {
+  // padding-top: 20vh;
+  height: auto;
+  min-height: auto;
+
+  padding-bottom: 10vh;
+}
+
+.heading {
+  color: #ffffff;
+  font-family: "SF Rounded";
+  font-size: 2rem;
+}
+
+// img.logo {
+//   padding-top: 10px;
+//   height: 15vh;
+// }
+// hr {
+//   height: 1px;
+//   background-color: #ccc;
+//   border: none;
+// }
+.card-main {
+  width: 80%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  // justify-content: flex-start;
+  // flex-direction: column;
+
+  .card {
+    // border: 1px solid black;
+    border-radius: 1rem;
+    display: flex;
+    max-width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 60px 0px;
+    // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+      rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    background-color: #ffffff;
+
+    .card-logo {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      // border: 1px solid black;
+      border-radius: 1rem;
+      width: 100%;
+      position: relative;
+
+      img {
+        width: 75%;
+        height: 150px;
+        border-radius: 1rem;
+        position: absolute;
+        top: -75px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+          rgba(17, 17, 26, 0.1) 0px 16px 56px,
+          rgba(17, 17, 26, 0.1) 0px 24px 80px;
+      }
+      .card-title-div {
+        width: 100%;
+        padding: 10px;
+        margin-top: 100px;
+
+        h3.card-title {
+          width: 100%;
+          margin: 10px 0px;
+          padding: 0px;
+          color: #000000;
+          font-family: "SF Rounded";
+        }
+      }
+    }
+    .card-details {
+      h4.card-title,
+      p {
+        text-align: left;
+      }
+      h4.card-title {
+        padding: 0;
+        margin: 10px 0px;
+      }
+      .card-description {
+        width: 100%;
+
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        font-family: "Quicksand_Regular";
+      }
+      p.card-charges {
+        text-align: center;
+        width: 100%;
+        font-weight: 700;
+        font-family: "Quicksand_Bold";
+
+        // max-width: 100%;
+        //
+        // max-height: 30%;
+      }
+    }
+  }
+}
+div.steps {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  h2 {
+    color: #ff3494;
+  }
+
+  .steps-one,
+  .steps-two,
+  .steps-three {
+    border-top: 1px solid #f3f4f6;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .right {
+      // text-align: left;
+      padding-left: 10px;
+      // width: 70%;
+
+      img {
+        width: 128px;
+      }
+      button {
+        font-size: 18px;
+        padding: 10px 30px;
+        color: aliceblue;
+        background-color: #ff3494;
+        border-radius: 1rem;
+      }
+    }
+    .left {
+      // width: 30%;
+      color: #ff3494;
+    }
+  }
+  .steps-one {
+    border: none;
+  }
+  .steps-three {
+    margin-bottom: 100px;
+  }
+}
+button.paynow {
+  margin: auto;
+  background-color: #000000;
+  border: 2px solid white;
+  padding: 15px 35px;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10vh;
+  font-family: "Quicksand_Regular";
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer {
+  margin: 20px 0px;
+}
+
+.not-registered {
+  h1 {
+    color: #ffffff;
+    font-family: "SF Rounded";
+  }
+  button {
+    background-color: #000000;
+    color: white;
+    border: 2px solid #ffffff;
+    padding: 15px 40px;
+    border-radius: 20px;
+    font-size: 1.35rem;
+  }
+}

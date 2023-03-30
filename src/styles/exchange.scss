@@ -1,0 +1,150 @@
+.exchange-main {
+  padding-top: 100px;
+  height: 100vh;
+  min-height: auto;
+  padding-bottom: 10vh;
+}
+
+.exchange-sub {
+  background-color: #ffffd1;
+  width: 50vw;
+  margin-left: 25vw;
+  padding-top: 5vh;
+  padding-bottom: 10vh;
+  border-radius: 20px;
+}
+
+.exchange-box1 {
+  display: flex;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  margin-left: 9vw;
+}
+
+.exchange-text {
+  background-color: #ffffd1;
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 7vh;
+  width: 30vw;
+}
+
+.exchange-box2 {
+  display: flex;
+  margin-left: 9vw;
+}
+
+.exchange-img1 {
+  height: 3vh;
+  width: 3vw;
+  margin-left: -6vw;
+  margin-top: 2vh;
+}
+
+.exchange-img2 {
+  height: 3vh;
+  width: 3vw;
+  margin-left: -6vw;
+  margin-top: 2vh;
+}
+
+.exchange-word {
+  margin-top: 1.5vh;
+}
+
+.exchange-btn {
+  height: 5vh;
+  width: 8vw;
+  border-radius: 10px;
+  background: rgb(251, 176, 59);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 176, 59, 1) 0%,
+    rgba(247, 147, 104, 1) 60%
+  );
+  font-family: "Quicksand_Bold";
+  color: #731b33;
+  font-size: medium;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .exchange-sub {
+    margin-left: 25vw;
+    width: 50vw;
+  }
+  .exchange-text {
+    width: 30vw;
+  }
+  .exchange-img1 {
+    margin-left: -8vw;
+  }
+
+  .exchange-img2 {
+    margin-left: -8vw;
+  }
+
+  .exchange-word {
+    margin-top: 0.5vh;
+  }
+
+  .exchange-btn {
+    height: 8vh;
+    width: 20vw;
+    font-size: small;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .exchange-sub {
+    margin-left: 25vw;
+    width: 50vw;
+  }
+  .exchange-text {
+    width: 30vw;
+  }
+  .exchange-img1 {
+    margin-left: -10vw;
+  }
+
+  .exchange-img2 {
+    margin-left: -10vw;
+  }
+
+  .exchange-word {
+    margin-top: 0.5vh;
+  }
+
+  .exchange-btn {
+    height: 8vh;
+    width: 20vw;
+    font-size: small;
+  }
+}
+
+@media (max-width: 767px) {
+  .exchange-sub {
+    margin-left: 15vw;
+    width: 70vw;
+  }
+  .exchange-text {
+    width: 50vw;
+  }
+  .exchange-img1 {
+    margin-left: -15vw;
+  }
+
+  .exchange-img2 {
+    margin-left: -15vw;
+  }
+
+  .exchange-word {
+    margin-top: 0.5vh;
+  }
+
+  .exchange-btn {
+    height: 8vh;
+    width: 20vw;
+    font-size: small;
+  }
+}
